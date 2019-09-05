@@ -37,14 +37,30 @@ def sphere( radius ):
     V = (4/3)*(3.14)*(radius**3);
     print ( "Surface area is", A," and volume is", V);
     
-radius (3);
+
 def feet( inches ):
     feet = inches // 12;
     rem = inches %12 ;
     print( feet, " feet ", rem, " inches" );
 
-    //Functions
+    
 
-def volume(
+def packet ( bits_in_file, bits_in_packet ):
+    num_full_packets = bits_in_file // bits_in_packet
+    rem_bits = bits_in_file % bits_in_packet
+    print( num_full_packets, " packets and ", rem_bits, " bits" );
+
+def rect_base( length, width ):
+    area = length * width
+    return area
+
+def pyramid ( length, width, height ):
+    volume = rect_base ( length, width ) * ( height );
+    return volume
+
+
+
+
+
 
 
