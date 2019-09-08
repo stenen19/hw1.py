@@ -34,12 +34,12 @@ def division(divisor, dividend):
     divisor = float(divisor)
     dividend = float(dividend)
     quotient = 0
-    count = 0
-    while dividend >= divisor: 
+    while dividend >= divisor:
         dividend -= divisor
-        quotient += 1 
-        count += 1
-        remainder = dividend - (divisor * count) 
+        quotient += 1
+        
+        # As dividend is updated as the loop iterates, it ends up being the remainder. 
+        remainder = dividend
     print("Quotient is" ,quotient, "and remainder is" ,remainder)
 
 # Professor Casey, same problem as with previous example
